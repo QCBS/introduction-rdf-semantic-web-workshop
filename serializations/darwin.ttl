@@ -1,0 +1,14 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.wikidata.org/entity/Q20124> a dcterms:BibliographicResource ;
+    dc:title "On the Origin of Species"@en ;
+    dcterms:creator <https://www.wikidata.org/entity/Q1035> ;
+    bibo:numPages 52 .
+
+<https://www.wikidata.org/entity/Q1035> a dcterms:Agent ;
+    foaf:familyName "Darwin" ;
+    foaf:givenName "Charles Robert" .

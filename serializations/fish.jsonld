@@ -1,0 +1,207 @@
+{
+  "@context": {
+    "dcterms": "http://purl.org/dc/terms/",
+    "dwc": "http://rs.tdwg.org/dwc/terms/",
+    "dwcdp": "http://rs.tdwg.org/dwcdp/terms/",
+    "dwciri": "http://rs.tdwg.org/dwc/iri/",
+    "gbif": "https://rs.gbif.org/terms/1.0/",
+    "mixs": "https://w3id.org/mixs/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://bioboum.org/Aliquot123",
+      "@type": "dwc:MaterialEntity",
+      "dwcdp:derivedFrom": {
+        "@id": "https://bioboum.org/Gut123"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/Spec123",
+      "@type": "dwc:MaterialEntity",
+      "dwc:preservation": "alcohol",
+      "dwcdp:collectedDuring": {
+        "@id": "https://bioboum.org/FishNet123"
+      },
+      "dwcdp:derivedFrom": {
+        "@id": "https://bioboum.org/Fish123"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/MatAss123",
+      "@type": "dwc:Assertion",
+      "dwc:assertionUnit": "µL",
+      "dwc:assertionValueNumeric": {
+        "@type": "xsd:decimal",
+        "@value": "8.5"
+      },
+      "dwcdp:about": {
+        "@id": "https://bioboum.org/Aliquot123"
+      },
+      "dwcdp:assertedBy": {
+        "@id": "https://bioboum.org/LabGal123"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/Gut123",
+      "@type": "dwc:MaterialEntity",
+      "dwcdp:derivedFrom": {
+        "@id": "https://bioboum.org/Spec123"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/Ident456",
+      "@type": "dwc:Identification",
+      "dwc:scientificName": "Lepomis gibbosus",
+      "dwcdp:basedOn": {
+        "@id": "https://bioboum.org/Spec123"
+      },
+      "dwcdp:identifiedBy": {
+        "@id": "https://bioboum.org/TaxoGuy123"
+      },
+      "dwcdp:targetOccurrence": {
+        "@id": "https://bioboum.org/Fish123"
+      },
+      "dwciri:toTaxon": {
+        "@id": "https://www.gbif.org/species/2394486"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/Ident7892",
+      "@type": "dwc:Identification",
+      "dwc:scientificName": "Cyclops scutifer",
+      "dwc:taxonAssignmentMethod": "blastn; e-value cutoff: 0.001",
+      "dwcdp:basedOn": {
+        "@id": "https://bioboum.org/NucSeq456"
+      },
+      "dwcdp:identifiedBy": {
+        "@id": "https://bioboum.org/LabGal123"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/Fish456",
+      "@type": "dwc:Occurrence",
+      "dwc:lifeStage": "adult",
+      "dwc:occurrenceRemarks": "got away before I could determine the sex",
+      "dwcdp:happenedDuring": {
+        "@id": "https://bioboum.org/FishNet123"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/FieldGuy123",
+      "@type": "dcterms:Agent",
+      "dwc:preferredAgentName": "Fieldwork Frederick"
+    },
+    {
+      "@id": "https://bioboum.org/Ident123",
+      "@type": "dwc:Identification",
+      "dwc:order": "Perciformes",
+      "dwcdp:basedOn": {
+        "@id": "https://bioboum.org/Fish123"
+      },
+      "dwcdp:identifiedBy": {
+        "@id": "https://bioboum.org/Fish123"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/NucSeq123",
+      "@type": "dwc:NucleotideSequence",
+      "dwc:sequence": "actgcgat"
+    },
+    {
+      "@id": "https://bioboum.org/Protocol123",
+      "@type": "dwc:MolecularProtocol",
+      "gbif:primer_name_forward": "fwhF2",
+      "gbif:primer_name_reverse": "fwhR2n",
+      "mixs:0000041": {
+        "@id": "https://w3id.org/mixs/LibLayoutEnum#paired"
+      },
+      "mixs:0000050": "Illumnina HiSeq 4000/NovaSeq 6000"
+    },
+    {
+      "@id": "https://bioboum.org/Ident7891",
+      "@type": "dwc:Identification",
+      "dwc:taxonAssignmentMethod": "blastn; e-value cutoff: 0.001",
+      "dwcdp:basedOn": {
+        "@id": "https://bioboum.org/NucSeq123"
+      },
+      "dwcdp:identifiedBy": {
+        "@id": "https://bioboum.org/LabGal123"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/NucAn123",
+      "@type": "dwc:NucleotideAnalysis",
+      "dwcdp:analysisOf": {
+        "@id": "https://bioboum.org/Aliquot123"
+      },
+      "dwcdp:followed": {
+        "@id": "https://bioboum.org/Protocol123"
+      },
+      "dwcdp:produced": [
+        {
+          "@id": "https://bioboum.org/NucSeq123"
+        },
+        {
+          "@id": "https://bioboum.org/NucSeq456"
+        }
+      ]
+    },
+    {
+      "@id": "https://bioboum.org/Fish123",
+      "@type": "dwc:Occurrence",
+      "dwc:lifeStage": "juvenile",
+      "dwc:sex": "male",
+      "dwcdp:happenedDuring": {
+        "@id": "https://bioboum.org/FishNet123"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/TaxoGuy123",
+      "@type": "dcterms:Agent",
+      "dwc:preferredAgentName": "Taxonomy Thomas"
+    },
+    {
+      "@id": "https://bioboum.org/FishNet123",
+      "@type": "dwc:Event",
+      "dwc:eventDate": "2024-06-15",
+      "dwc:eventRemarks": "Rocky shoal",
+      "dwc:habitat": "reservoir",
+      "dwcdp:conductedBy": {
+        "@id": "https://bioboum.org/FieldDude123"
+      },
+      "dwcdp:spatialLocation": {
+        "@id": "https://bioboum.org/Place123"
+      },
+      "dwciri:habitat": {
+        "@id": "http://purl.obolibrary.org/obo/ENVO_00000025"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/NucSeq456",
+      "@type": "dwc:NucleotideSequence",
+      "dwc:sequence": "atcacgat"
+    },
+    {
+      "@id": "https://bioboum.org/Place123",
+      "@type": "dcterms:Location",
+      "dwc:decimalLatitude": {
+        "@type": "xsd:decimal",
+        "@value": "60.80"
+      },
+      "dwc:decimalLongitude": {
+        "@type": "xsd:decimal",
+        "@value": "-125.67"
+      },
+      "dwc:waterBody": "Crystal Lake",
+      "dwciri:inDescribedPlace": {
+        "@id": "http://vocab.getty.edu/tgn/2695980"
+      }
+    },
+    {
+      "@id": "https://bioboum.org/LabGal123",
+      "@type": "dcterms:Agent",
+      "dwc:preferredAgentName": "Laboratory Lisbeth"
+    }
+  ]
+}

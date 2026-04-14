@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "bibo": "http://purl.org/ontology/bibo/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "https://www.wikidata.org/entity/Q20124",
+      "@type": "dcterms:BibliographicResource",
+      "bibo:numPages": 52,
+      "dcterms:creator": {
+        "@id": "https://www.wikidata.org/entity/Q1035"
+      },
+      "http://purl.org/dc/elements/1.1/title": {
+        "@language": "en",
+        "@value": "On the Origin of Species"
+      }
+    },
+    {
+      "@id": "https://www.wikidata.org/entity/Q1035",
+      "@type": "dcterms:Agent",
+      "foaf:familyName": "Darwin",
+      "foaf:givenName": "Charles Robert"
+    }
+  ]
+}

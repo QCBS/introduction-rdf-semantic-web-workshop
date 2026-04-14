@@ -1,0 +1,73 @@
+
+<https://bioboum.org/Fish123> <http://rs.tdwg.org/dwcdp/terms/happenedDuring> <https://bioboum.org/FishNet123> .
+<https://bioboum.org/Protocol123> <https://rs.gbif.org/terms/1.0/primer_name_forward> "fwhF2" .
+<https://bioboum.org/MatAss123> <http://rs.tdwg.org/dwcdp/terms/about> <https://bioboum.org/Aliquot123> .
+<https://bioboum.org/NucAn123> <http://rs.tdwg.org/dwcdp/terms/analysisOf> <https://bioboum.org/Aliquot123> .
+<https://bioboum.org/MatAss123> <http://rs.tdwg.org/dwcdp/terms/assertedBy> <https://bioboum.org/LabGal123> .
+<https://bioboum.org/Ident123> <http://rs.tdwg.org/dwc/terms/order> "Perciformes" .
+<https://bioboum.org/Place123> <http://rs.tdwg.org/dwc/terms/decimalLatitude> "60.80"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://bioboum.org/TaxoGuy123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<https://bioboum.org/FieldGuy123> <http://rs.tdwg.org/dwc/terms/preferredAgentName> "Fieldwork Frederick" .
+<https://bioboum.org/Ident7891> <http://rs.tdwg.org/dwcdp/terms/basedOn> <https://bioboum.org/NucSeq123> .
+<https://bioboum.org/Place123> <http://rs.tdwg.org/dwc/iri/inDescribedPlace> <http://vocab.getty.edu/tgn/2695980> .
+<https://bioboum.org/Fish123> <http://rs.tdwg.org/dwc/terms/lifeStage> "juvenile" .
+<https://bioboum.org/Ident123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/Identification> .
+<https://bioboum.org/Gut123> <http://rs.tdwg.org/dwcdp/terms/derivedFrom> <https://bioboum.org/Spec123> .
+<https://bioboum.org/Ident7892> <http://rs.tdwg.org/dwcdp/terms/identifiedBy> <https://bioboum.org/LabGal123> .
+<https://bioboum.org/MatAss123> <http://rs.tdwg.org/dwc/terms/assertionUnit> "µL" .
+<https://bioboum.org/FishNet123> <http://rs.tdwg.org/dwc/iri/habitat> <http://purl.obolibrary.org/obo/ENVO_00000025> .
+<https://bioboum.org/MatAss123> <http://rs.tdwg.org/dwc/terms/assertionValueNumeric> "8.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://bioboum.org/Fish456> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/Occurrence> .
+<https://bioboum.org/LabGal123> <http://rs.tdwg.org/dwc/terms/preferredAgentName> "Laboratory Lisbeth" .
+<https://bioboum.org/Fish456> <http://rs.tdwg.org/dwcdp/terms/happenedDuring> <https://bioboum.org/FishNet123> .
+<https://bioboum.org/Protocol123> <https://w3id.org/mixs/terms/0000050> "Illumnina HiSeq 4000/NovaSeq 6000" .
+<https://bioboum.org/FishNet123> <http://rs.tdwg.org/dwcdp/terms/spatialLocation> <https://bioboum.org/Place123> .
+<https://bioboum.org/Ident7892> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/Identification> .
+<https://bioboum.org/NucAn123> <http://rs.tdwg.org/dwcdp/terms/produced> <https://bioboum.org/NucSeq123> .
+<https://bioboum.org/Aliquot123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/MaterialEntity> .
+<https://bioboum.org/NucAn123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/NucleotideAnalysis> .
+<https://bioboum.org/FishNet123> <http://rs.tdwg.org/dwc/terms/eventDate> "2024-06-15" .
+<https://bioboum.org/NucAn123> <http://rs.tdwg.org/dwcdp/terms/produced> <https://bioboum.org/NucSeq456> .
+<https://bioboum.org/Fish456> <http://rs.tdwg.org/dwc/terms/occurrenceRemarks> "got away before I could determine the sex" .
+<https://bioboum.org/Place123> <http://rs.tdwg.org/dwc/terms/waterBody> "Crystal Lake" .
+<https://bioboum.org/Gut123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/MaterialEntity> .
+<https://bioboum.org/Ident456> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/Identification> .
+<https://bioboum.org/FieldGuy123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<https://bioboum.org/Ident7892> <http://rs.tdwg.org/dwc/terms/taxonAssignmentMethod> "blastn; e-value cutoff: 0.001" .
+<https://bioboum.org/Ident456> <http://rs.tdwg.org/dwcdp/terms/targetOccurrence> <https://bioboum.org/Fish123> .
+<https://bioboum.org/Fish123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/Occurrence> .
+<https://bioboum.org/Spec123> <http://rs.tdwg.org/dwcdp/terms/collectedDuring> <https://bioboum.org/FishNet123> .
+<https://bioboum.org/Ident456> <http://rs.tdwg.org/dwcdp/terms/identifiedBy> <https://bioboum.org/TaxoGuy123> .
+<https://bioboum.org/MatAss123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/Assertion> .
+<https://bioboum.org/Ident123> <http://rs.tdwg.org/dwcdp/terms/identifiedBy> <https://bioboum.org/Fish123> .
+<https://bioboum.org/Ident7891> <http://rs.tdwg.org/dwcdp/terms/identifiedBy> <https://bioboum.org/LabGal123> .
+<https://bioboum.org/Spec123> <http://rs.tdwg.org/dwc/terms/preservation> "alcohol" .
+<https://bioboum.org/Fish123> <http://rs.tdwg.org/dwc/terms/sex> "male" .
+<https://bioboum.org/TaxoGuy123> <http://rs.tdwg.org/dwc/terms/preferredAgentName> "Taxonomy Thomas" .
+<https://bioboum.org/NucSeq123> <http://rs.tdwg.org/dwc/terms/sequence> "actgcgat" .
+<https://bioboum.org/Protocol123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/MolecularProtocol> .
+<https://bioboum.org/Ident456> <http://rs.tdwg.org/dwc/iri/toTaxon> <https://www.gbif.org/species/2394486> .
+<https://bioboum.org/Protocol123> <https://rs.gbif.org/terms/1.0/primer_name_reverse> "fwhR2n" .
+<https://bioboum.org/FishNet123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/Event> .
+<https://bioboum.org/FishNet123> <http://rs.tdwg.org/dwc/terms/eventRemarks> "Rocky shoal" .
+<https://bioboum.org/Ident7892> <http://rs.tdwg.org/dwcdp/terms/basedOn> <https://bioboum.org/NucSeq456> .
+<https://bioboum.org/Ident123> <http://rs.tdwg.org/dwcdp/terms/basedOn> <https://bioboum.org/Fish123> .
+<https://bioboum.org/Ident7891> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/Identification> .
+<https://bioboum.org/FishNet123> <http://rs.tdwg.org/dwc/terms/habitat> "reservoir" .
+<https://bioboum.org/LabGal123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Agent> .
+<https://bioboum.org/Spec123> <http://rs.tdwg.org/dwcdp/terms/derivedFrom> <https://bioboum.org/Fish123> .
+<https://bioboum.org/Fish456> <http://rs.tdwg.org/dwc/terms/lifeStage> "adult" .
+<https://bioboum.org/FishNet123> <http://rs.tdwg.org/dwcdp/terms/conductedBy> <https://bioboum.org/FieldDude123> .
+<https://bioboum.org/Aliquot123> <http://rs.tdwg.org/dwcdp/terms/derivedFrom> <https://bioboum.org/Gut123> .
+<https://bioboum.org/Ident456> <http://rs.tdwg.org/dwc/terms/scientificName> "Lepomis gibbosus" .
+<https://bioboum.org/Spec123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/MaterialEntity> .
+<https://bioboum.org/Ident456> <http://rs.tdwg.org/dwcdp/terms/basedOn> <https://bioboum.org/Spec123> .
+<https://bioboum.org/Ident7892> <http://rs.tdwg.org/dwc/terms/scientificName> "Cyclops scutifer" .
+<https://bioboum.org/NucAn123> <http://rs.tdwg.org/dwcdp/terms/followed> <https://bioboum.org/Protocol123> .
+<https://bioboum.org/NucSeq456> <http://rs.tdwg.org/dwc/terms/sequence> "atcacgat" .
+<https://bioboum.org/NucSeq123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/NucleotideSequence> .
+<https://bioboum.org/Place123> <http://rs.tdwg.org/dwc/terms/decimalLongitude> "-125.67"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://bioboum.org/Ident7891> <http://rs.tdwg.org/dwc/terms/taxonAssignmentMethod> "blastn; e-value cutoff: 0.001" .
+<https://bioboum.org/NucSeq456> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://rs.tdwg.org/dwc/terms/NucleotideSequence> .
+<https://bioboum.org/Protocol123> <https://w3id.org/mixs/terms/0000041> <https://w3id.org/mixs/LibLayoutEnum#paired> .
+<https://bioboum.org/Place123> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/dc/terms/Location> .

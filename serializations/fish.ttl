@@ -1,0 +1,98 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix dwcdp: <http://rs.tdwg.org/dwcdp/terms/> .
+@prefix dwciri: <http://rs.tdwg.org/dwc/iri/> .
+@prefix gbif: <https://rs.gbif.org/terms/1.0/> .
+@prefix mixs: <https://w3id.org/mixs/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://bioboum.org/FieldGuy123> a dcterms:Agent ;
+    dwc:preferredAgentName "Fieldwork Frederick" .
+
+<https://bioboum.org/Fish456> a dwc:Occurrence ;
+    dwc:lifeStage "adult" ;
+    dwc:occurrenceRemarks "got away before I could determine the sex" ;
+    dwcdp:happenedDuring <https://bioboum.org/FishNet123> .
+
+<https://bioboum.org/Ident123> a dwc:Identification ;
+    dwc:order "Perciformes" ;
+    dwcdp:basedOn <https://bioboum.org/Fish123> ;
+    dwcdp:identifiedBy <https://bioboum.org/Fish123> .
+
+<https://bioboum.org/Ident456> a dwc:Identification ;
+    dwciri:toTaxon <https://www.gbif.org/species/2394486> ;
+    dwc:scientificName "Lepomis gibbosus" ;
+    dwcdp:basedOn <https://bioboum.org/Spec123> ;
+    dwcdp:identifiedBy <https://bioboum.org/TaxoGuy123> ;
+    dwcdp:targetOccurrence <https://bioboum.org/Fish123> .
+
+<https://bioboum.org/Ident7891> a dwc:Identification ;
+    dwc:taxonAssignmentMethod "blastn; e-value cutoff: 0.001" ;
+    dwcdp:basedOn <https://bioboum.org/NucSeq123> ;
+    dwcdp:identifiedBy <https://bioboum.org/LabGal123> .
+
+<https://bioboum.org/Ident7892> a dwc:Identification ;
+    dwc:scientificName "Cyclops scutifer" ;
+    dwc:taxonAssignmentMethod "blastn; e-value cutoff: 0.001" ;
+    dwcdp:basedOn <https://bioboum.org/NucSeq456> ;
+    dwcdp:identifiedBy <https://bioboum.org/LabGal123> .
+
+<https://bioboum.org/MatAss123> a dwc:Assertion ;
+    dwc:assertionUnit "µL" ;
+    dwc:assertionValueNumeric 8.5 ;
+    dwcdp:about <https://bioboum.org/Aliquot123> ;
+    dwcdp:assertedBy <https://bioboum.org/LabGal123> .
+
+<https://bioboum.org/NucAn123> a dwc:NucleotideAnalysis ;
+    dwcdp:analysisOf <https://bioboum.org/Aliquot123> ;
+    dwcdp:followed <https://bioboum.org/Protocol123> ;
+    dwcdp:produced <https://bioboum.org/NucSeq123>,
+        <https://bioboum.org/NucSeq456> .
+
+<https://bioboum.org/Gut123> a dwc:MaterialEntity ;
+    dwcdp:derivedFrom <https://bioboum.org/Spec123> .
+
+<https://bioboum.org/Place123> a dcterms:Location ;
+    dwciri:inDescribedPlace <http://vocab.getty.edu/tgn/2695980> ;
+    dwc:decimalLatitude 60.80 ;
+    dwc:decimalLongitude -125.67 ;
+    dwc:waterBody "Crystal Lake" .
+
+<https://bioboum.org/Protocol123> a dwc:MolecularProtocol ;
+    gbif:primer_name_forward "fwhF2" ;
+    gbif:primer_name_reverse "fwhR2n" ;
+    mixs:0000041 <https://w3id.org/mixs/LibLayoutEnum#paired> ;
+    mixs:0000050 "Illumnina HiSeq 4000/NovaSeq 6000" .
+
+<https://bioboum.org/TaxoGuy123> a dcterms:Agent ;
+    dwc:preferredAgentName "Taxonomy Thomas" .
+
+<https://bioboum.org/Aliquot123> a dwc:MaterialEntity ;
+    dwcdp:derivedFrom <https://bioboum.org/Gut123> .
+
+<https://bioboum.org/NucSeq123> a dwc:NucleotideSequence ;
+    dwc:sequence "actgcgat" .
+
+<https://bioboum.org/NucSeq456> a dwc:NucleotideSequence ;
+    dwc:sequence "atcacgat" .
+
+<https://bioboum.org/Spec123> a dwc:MaterialEntity ;
+    dwc:preservation "alcohol" ;
+    dwcdp:collectedDuring <https://bioboum.org/FishNet123> ;
+    dwcdp:derivedFrom <https://bioboum.org/Fish123> .
+
+<https://bioboum.org/FishNet123> a dwc:Event ;
+    dwciri:habitat <http://purl.obolibrary.org/obo/ENVO_00000025> ;
+    dwc:eventDate "2024-06-15" ;
+    dwc:eventRemarks "Rocky shoal" ;
+    dwc:habitat "reservoir" ;
+    dwcdp:conductedBy <https://bioboum.org/FieldDude123> ;
+    dwcdp:spatialLocation <https://bioboum.org/Place123> .
+
+<https://bioboum.org/LabGal123> a dcterms:Agent ;
+    dwc:preferredAgentName "Laboratory Lisbeth" .
+
+<https://bioboum.org/Fish123> a dwc:Occurrence ;
+    dwc:lifeStage "juvenile" ;
+    dwc:sex "male" ;
+    dwcdp:happenedDuring <https://bioboum.org/FishNet123> .
